@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>향수커플♥♡♥♡♥♡♥♡메인페이지</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+		<script src="assets/js/month.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			var main = $('.bxslider').bxSlider({
+				mode: 'fade',
+				auto: true,		//자동으로 슬라이드
+				controls : true,	//좌우 화살표
+				autoControls: true,	//stop,play
+				pager:true,	//페이징
+				pause: 3000,
+				autoDelay: 0,
+				slideWidth: 2500,
+				speed: 500,
+				stopAutoOnclick:true
+			});
+
+			$(".bx-stop").click(function(){	// 중지버튼 눌렀을때
+				main.stopAuto();
+				$(".bx-stop").hide();
+				$(".bx-start").show();
+				return false;
+			});
+
+			$(".bx-start").click(function(){	//시작버튼 눌렀을때
+			    main.startAuto();
+				$(".bx-start").hide();
+				$(".bx-stop").show();
+				return false;
+			});
+
+			$(".bx-start").hide();	//onload시 시작버튼 숨김.
+		});
+		</script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Content -->
+			<div id="content">
+				<div class="inner">
+
+					<!-- Post -->
+						<article class="box post post-excerpt">
+							<header>
+								<!--
+									Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+									if they get too long. You can also remove the <p> entirely if you don't
+									need a subtitle.
+								-->
+								<br>
+								<br>
+								<h2 style="text-align: centered"><a href="#">♥향수커플♥</a></h2>
+								<p style= "margin:10px;padding:2px;border:0;color:#f29886;text-align:centered;">Perfume couple</p>
+							</header>
+							<div class="info">
+								<!--
+									Note: The date should be formatted exactly as it's shown below. In particular, the
+									"least significant" characters of the month should be encapsulated in a <span>
+									element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+									Oh, and if you don't need a date for a particular page or post you can simply delete
+									the entire "date" element.
+
+								-->
+
+								<span class="date"><span id="month"></span><br><span id="day"></span></span>
+								<!--
+									Note: You can change the number of list items in "stats" to whatever you want.
+								-->
+								<ul class="stats">
+									<li><a href="#" class="icon fa-comment">16</a></li>
+									<li><a href="#" class="icon fa-heart">32</a></li>
+									<li><a href="#" class="icon brands fa-twitter">64</a></li>
+									<li><a href="#" class="icon brands fa-facebook-f">128</a></li>
+								</ul>
+							</div>
+							<div class="home__slider">
+								<div class="bxslider">
+									</style>
+									<div><img src="images/main01.jpg" alt=""></div>
+									<div><img src="images/main02.jpg" alt=""></div>
+									<div><img src="images/main03.jpg" alt=""></div>
+									<div><img src="images/main04.jpg" alt=""></div>
+									<div><img src="images/main05.jpg" alt=""></div>
+
+								</div>
+							</div>
+
+						</article>
+
+						<!-- Pagination -->
+							<!--<div class="pagination">-->
+								<!--<a href="#" class="button previous">Previous Page</a>-->
+								<!--<center>
+									<div class="pages">
+										<a href="#" class="active">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">4</a>
+										<a href="#">5</a>
+									</div>
+							</center>
+						</div>-->
+				</div>
+			</div>
+
+		<!-- Sidebar -->
+			<div id="sidebar">
+				<!-- Logo -->
+						<script language="JavaScript">
+							var now = new Date();
+							var then = new Date("JUNE 22,2019");
+							var gap = now.getTime() - then.getTime();
+							gap = Math.floor(gap / (1000 * 60 * 60 * 24));
+							document.write('<center>'+'<h1 id="logo">'+'<font color="white">'+'<font size="3.5em">♥우리 사랑한지♥</font>'+'</font>'+'<br>'+ gap + "일"+'</h1>'+'</center>');
+						</script>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<style>
+							ul{
+								font-family:'Jua',sans-serif;
+							}
+						</style>
+						<ul>
+							<li class="current"><a href="index.html">Main Page</a></li>
+							<li><a href="us.html">About Us</a></li>
+							<li><a href="wish.html">Wish List</a></li>
+							<li><a href="letter.html">Love Letter</a></li>
+						</ul>
+					</nav>
+
+				<!-- Text
+					<section class="box text-style1">
+						<div class="inner">
+							<p>
+							</p>
+						</div>
+					</section>
+				-->
+
+				<!-- Copyright -->
+					<ul id="copyright">
+						<li>&copy; perfume.</li><li>Design: <a href="#">HyangE</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+
+	</body>
+</html>
